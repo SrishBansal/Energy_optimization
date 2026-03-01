@@ -1,0 +1,8 @@
+Directive,Target,Threshold,Penalty_Unit
+Financial_Covenant,DSCR,1.35,1000000
+Growth_Mandate,EBITDA_Growth_Pct,5,5000000
+Regulatory_Mandate,Min_Renewable_Pct,45,2500000
+Carbon_Optimization,Carbon_Tax_Ton,1500,0
+Dispatch_Priority,Solar_Wind,0,0
+Dispatch_Priority,Gas_Tax_MWh,750,0
+Dispatch_Priority,Coal_Tax_MWh,1350,0

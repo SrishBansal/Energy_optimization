@@ -1,0 +1,21 @@
+Plant_ID,State,Plant_Type,Installed_Capacity_MW,Variable_Cost_per_MWh,Emission_per_MWh,Min_Load_%,Ramp_Rate
+P1,Maharashtra,Coal,2000,2500,0.9,40,200
+P2,Maharashtra,Gas,1000,3500,0.5,30,300
+P3,Maharashtra,Solar,1500,500,0,0,9999
+P4,Maharashtra,Wind,1200,700,0,0,9999
+P5,Gujarat,Coal,2000,2500,0.9,40,200
+P6,Gujarat,Gas,1000,3500,0.5,30,300
+P7,Gujarat,Solar,1500,500,0,0,9999
+P8,Gujarat,Wind,1200,700,0,0,9999
+P9,Tamil Nadu,Coal,2000,2500,0.9,40,200
+P10,Tamil Nadu,Gas,1000,3500,0.5,30,300
+P11,Tamil Nadu,Solar,1500,500,0,0,9999
+P12,Tamil Nadu,Wind,1200,700,0,0,9999
+P13,Karnataka,Coal,2000,2500,0.9,40,200
+P14,Karnataka,Gas,1000,3500,0.5,30,300
+P15,Karnataka,Solar,1500,500,0,0,9999
+P16,Karnataka,Wind,1200,700,0,0,9999
+P17,Rajasthan,Coal,2000,2500,0.9,40,200
+P18,Rajasthan,Gas,1000,3500,0.5,30,300
+P19,Rajasthan,Solar,1500,500,0,0,9999
+P20,Rajasthan,Wind,1200,700,0,0,9999

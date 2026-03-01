@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --sidebar-w: 260px;
+    --header-h: 72px;
+    --gutter: 24px;
+    --padding-pc: 32px;
+    --bg-slate: #f1f5f9;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --glass-blur: 10px;
+    /* Kept from original, not in new snippet but implied by context */
+    --primary-cyan: #06b6d4;
+    /* Kept from original, not in new snippet but implied by context */
+  }
+
+  .dark {
+    --bg-slate: #020617;
+    --glass-bg: rgba(15, 23, 42, 0.7);
+    --glass-border: rgba(30, 41, 59, 0.5);
+    --bg-color: #020617;
+    /* Kept from original, not in new snippet but implied by context */
+    --text-color: #f8fafc;
+    /* Kept from original, not in new snippet but implied by context */
+    --card-bg: rgba(15, 23, 42, 0.9);
+    /* Kept from original, not in new snippet but implied by context */
+    --card-border: rgba(255, 255, 255, 0.1);
+    /* Kept from original, not in new snippet but implied by context */
+  }
+
+  /* New global reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-slate);
+    /* Changed to new var */
+    color: var(--text-color);
+    /* Kept from original */
+    font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    /* Changed from overflow-x: hidden */
+    height: 100vh;
+    /* New */
+    width: 100vw;
+    /* New */
+  }
+}
+
+@layer components {
+
+  /* 12-Column Responsive CSS Grid */
+  /* MASTER DESKTOP LAYOUT (Flexbox) */
+  .root-layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: var(--bg-slate);
+    position: relative;
+  }
+
+  /* INTERNAL DASHBOARD GRID (PC Ratios) */
+  .dashboard-content-wrapper {
+    padding: var(--padding-pc);
+    flex: 1;
+  }
+
+  .kpi-grid-pc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gutter);
+  }
+
+  .chart-grid-pc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gutter);
+    margin-top: var(--gutter);
+  }
+
+  .chart-container-pc {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+
+  /* LEGACY GRID (will be phased out or used for internal card grids) */
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gutter);
+    width: 100%;
+  }
+
+  /* Glassmorphism Implementation */
+  .glass-card {
+    position: relative;
+    /* Kept from original */
+    overflow: hidden;
+    /* Kept from original */
+    background: var(--glass-bg);
+    /* Changed */
+    backdrop-filter: blur(20px);
+    /* Changed */
+    -webkit-backdrop-filter: blur(20px);
+    /* Changed */
+    border: 1px solid var(--glass-border);
+    /* Changed */
+    border-radius: 20px;
+    /* Changed */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    /* Changed */
+    transition: all 0.3s ease;
+    /* Changed */
+  }
+
+  .dark .glass-card {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+  }
+
+  .metric-value {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 1;
+  }
+
+  .subtle-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: #64748b;
+    opacity: 0.8;
+  }
+}
+
+/* Global Scrollbar Reset */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 116, 139, 0.4);
+}
