@@ -1,0 +1,202 @@
+/Users/srishbansal/Desktop/Executioners/helios-control-room/backend/main.py:56: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [37644]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+🚀 [HELIOS] Initializing Data Sanitization Sequence...
+✅ [HELIOS] Memory cache populated with sanitized data.
+INFO:     127.0.0.1:55272 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55301 - "GET /api/forecast?state=Gujarat HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55300 - "GET /api/dashboard-data?state=Gujarat&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55319 - "GET /api/forecast?state=Gujarat HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55318 - "GET /api/dashboard-data?state=Gujarat&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55356 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55360 - "GET /api/forecast HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55359 - "GET /api/dashboard-data?spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55360 - "GET /api/forecast?state=Gujarat HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55359 - "GET /api/dashboard-data?state=Gujarat&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55359 - "GET /api/state/Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55366 - "GET /api/state/Gujarat HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55360 - "GET /api/dashboard-data?state=Gujarat&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55367 - "GET /api/dashboard-data?state=Gujarat&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55367 - "GET /api/state/Karnataka HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55360 - "GET /api/dashboard-data?state=Karnataka&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55373 - "GET /api/state/Rajasthan HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55374 - "GET /api/dashboard-data?state=Rajasthan&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55373 - "GET /api/forecast?state=Rajasthan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55380 - "GET /api/forecast?state=Rajasthan HTTP/1.1" 200 OK
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+DEBUG: multipliers received -> spot=1.0, carbon=1.0
+INFO:     127.0.0.1:55374 - "GET /api/dashboard-data?state=Rajasthan&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55378 - "GET /api/dashboard-data?state=Rajasthan&spot_price_mult=1&carbon_price_mult=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56297 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56297 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56311 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56313 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56322 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56324 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56328 - "GET /api/forecast?state=Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56328 - "GET /api/forecast?state=Karnataka HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56328 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56339 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56389 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56460 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56469 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56472 - "GET /api/forecast?state=Rajasthan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56472 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56499 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56499 - "GET /api/forecast?state=Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56499 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56499 - "GET /api/forecast?state=Karnataka HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56499 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56527 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56529 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56542 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56546 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56543 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56547 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56547 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56543 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56546 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56542 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56554 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56557 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56573 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56575 - "GET /api/forecast?state=Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56590 - "GET /api/forecast?state=Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56590 - "GET /api/forecast?state=Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56622 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56623 - "GET /api/forecast HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56739 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56743 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56741 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56745 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56749 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56766 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56766 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57241 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57246 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57247 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57243 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57426 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57427 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57444 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57446 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57444 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57449 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57449 - "GET /api/state/Tamil%20Nadu HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57450 - "GET /api/state/Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57450 - "GET /api/state/Rajasthan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57455 - "GET /api/state/Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57465 - "GET /api/state/Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57467 - "GET /api/state/Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57479 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57483 - "GET /api/state/Gujarat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57483 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57496 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57498 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57511 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57512 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57620 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57624 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57621 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57625 - "GET /api/state/Maharashtra HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57669 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57671 - "GET /api/asset-health?date_from=2020-01-01&date_to=2020-12-31 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58023 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58035 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58035 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58111 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58136 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58163 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58398 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58399 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58597 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58598 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58685 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58717 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58758 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58774 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58776 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58817 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58819 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59458 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59510 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59791 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60140 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60232 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60376 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60454 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60454 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60501 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60600 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62025 - "GET /api/report/appendix?state=System HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62025 - "GET /favicon.ico HTTP/1.1" 404 Not Found
