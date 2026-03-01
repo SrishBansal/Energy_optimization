@@ -1,7 +1,7 @@
 # ☀️ Helios Control Room: Advanced Energy System Optimization
 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://agent-69a397eee83754f075af3177--heliooptimall.netlify.app/)
+[![Deployed Website](https://www.netlify.com/img/deploy/button.svg)](https://agent-69a397eee83754f075af3177--heliooptimall.netlify.app/)
 
 ## 🚀 Overview
 Helios Control Room is a high-fidelity decision-support dashboard designed for the Indian energy sector. It simulates the financial and operational performance of a multi-asset power portfolio across 5 states (Gujarat, Maharashtra, Rajasthan, Tamil Nadu, and Karnataka) over a 5-year horizon.
